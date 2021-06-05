@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: skyblue;
+} 
+/* Asosiy */
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/*Asosiy*/
+.ice__form{
+    margin: 150px 500px;
+}
+h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 120px;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.form__label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+.checkbox__controller{
+    display: inline-block;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid red;
+    margin-right: 15px;
+}
+.form__input1{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.form__input1:checked + .checkbox__controller{
+    background-image: url(./img/table-tennis.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: inset 0 0 3px 3px #fff; */
+    /* opacity: .4; */
+}
+.form__input2:checked + .checkbox__controller{
+    background-image: url(.//img/basketball-ball.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: inset 0 0 3px 3px #fff; */
+    /* opacity: .4; */
+}
+.form__input3:checked + .checkbox__controller{
+    background-image: url(.//img/volleyball-ball.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: inset 0 0 3px 3px #fff; */
+    /* opacity: .4; */
+}
+.form__input4:checked + .checkbox__controller{
+    background-image: url(.//img/hockey-puck.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: inset 0 0 3px 3px #fff; */
+    /* opacity: .4; */
+}
+.form__input1:checked ~ .text{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form__input2:checked ~ .text{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form__input3:checked ~ .text{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form__input4:checked ~ .text{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.submit{
+    width: 200px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    border:2px solid transparent;
+    background-color: #000;
+    color: #fff;
+}
+.submit:hover{
+    border: 2px solid #fff;
+    background-color: black;
+    color: skyblue;
+}
